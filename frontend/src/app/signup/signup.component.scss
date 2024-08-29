@@ -1,0 +1,29 @@
+mat-form-field{
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
+  height: 100vh;           /* Utilise toute la hauteur de la vue */
+}
+
+mat-card {
+  width: 400px;            /* Définit une largeur fixe pour le formulaire */
+}
+
+.mat-card-title {
+  text-align: center;      /* Centre le texte horizontalement */
+  display: inline-block;   /* Nécessaire pour l'animation */
+  animation: roll 3s infinite linear; /* Animation infinie */
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
